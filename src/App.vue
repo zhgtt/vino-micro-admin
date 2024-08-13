@@ -31,7 +31,7 @@ const watermarkProps = computed<WatermarkProps>(() => {
     <AppProvider>
       <!--   路由页面    -->
       <RouterView />
-      <NButton>按钮11222222</NButton>
+      <NButton>按钮112222233332</NButton>
       <!--   水印   -->
       <NWatermark v-bind="watermarkProps" />
     </AppProvider>
