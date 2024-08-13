@@ -1,3 +1,6 @@
+/**
+ * 注册 micro-app 插件，定义子应用的配置
+ */
 import microApp from '@micro-zoe/micro-app' // 引入 micro-app
 
 export function setupMicroApp() {

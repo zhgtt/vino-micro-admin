@@ -1,5 +1,3 @@
-import type { ImportMetaEnv } from 'vite/types/importMeta'
-
 /**
  * @description: 对 env 进行类型声明
  *
@@ -7,12 +5,12 @@ import type { ImportMetaEnv } from 'vite/types/importMeta'
  */
 declare namespace Env {
   // 声明 Env.ImportMeta 类型
-  interface ImportMeta extends ImportMetaEnv {
+  interface ImportMeta {
     // 项目基础路径
     readonly BASE_URL: string
   }
 }
 
-interface ImportMeta {
-  readonly env: Env.ImportMeta
-}
+// interface ImportMeta {
+//   readonly env: Env.ImportMeta
+// }

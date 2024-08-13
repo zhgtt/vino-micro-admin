@@ -1,26 +1,22 @@
 import { createApp } from 'vue'
+
+// 引入第三方插件的静态资源
+import './plugins/assets'
+
+// 引入全局 css 资源
 import './style.css'
-import microApp from '@micro-zoe/micro-app' // 引入 micro-app
+
+// 主应用页面
 import App from './App.vue'
-import { setupNaiveUI } from './plugins'
 
-// 初始化 micro-app
-microApp.start({
-  // 这里可以写入全局的配置项，它会应用于所有的子应用
-  // ...
-  // 全局监听所有子应用的生命周期
-  lifeCycles: {
-    // ...
-  },
-})
+// 引入自定义的注册方法，比如 路由、状态管理、第三方插件处理 等
 
-// 初始化 app 应用
+/**
+ * 注册 & 挂载全局 app 节点
+ */
 async function setupApp() {
   // 挂载全局 app 节点
   const app = createApp(App)
-
-  // 注册全局的 naive-ui 组件
-  setupNaiveUI(app)
 
   app.mount('#app')
 }
