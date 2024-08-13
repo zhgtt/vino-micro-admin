@@ -11,14 +11,14 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "allowImportingTsExtensions": true,
 
-    // 指定 Typescript 编译的模块路径别名
+    // 🐸 指定 Typescript 编译的模块路径别名
     "paths": {
       "@/*": ["./src/*"],
       "~/*": ["./*"]
     },
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
 
     /* Linting */
     "strict": true,
@@ -30,6 +30,6 @@
     "skipLibCheck": true
   },
 
-  // 指定 Typescript 编译的文件
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.d.ts"],
+  // 🐸 指定 Typescript 编译的文件
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.d.ts"]
 }

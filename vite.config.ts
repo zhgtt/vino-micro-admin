@@ -21,7 +21,7 @@ export default defineConfig(({ mode, command }) => {
     base: '/',
 
     resolve: {
-      // 配置路径别名，配置之后需要在 tsconfig.app.json 中添加 paths，再重启编辑器，以便 Typescript 能够识别到这些路径
+      // 🐸 配置路径别名，配置之后需要在 tsconfig.app.json 中添加 paths，再重启编辑器，以便 Typescript 能够识别到这些路径
       alias: {
         /**
          * import.meta.url - 获取当前文件的 url

@@ -11,9 +11,9 @@
     "strict": true,
     "noEmit": true,
     "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
 
-  // 指定 Typescript 编译的文件
+  // 🐸 指定 Typescript 编译的文件
   "include": ["./**/*.ts", "src/**/*.d.ts"]
 }
